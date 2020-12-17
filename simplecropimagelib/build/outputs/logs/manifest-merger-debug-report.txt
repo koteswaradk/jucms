@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:1-7:12
+	package
+		ADDED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml
+		INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml
+		INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml
+		INJECTED from /Users/koteswara/Documents/jucms/simplecropimagelib/src/main/AndroidManifest.xml

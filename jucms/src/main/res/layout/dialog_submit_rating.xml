@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/select_ratings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha=".75"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <RadioButton
+            android:id="@+id/rate_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Good"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/rate_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:checked="false"
+            android:text="Average"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/rate_boring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Boring"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/rate_ugly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:checked="false"
+            android:text="Ugly"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+</LinearLayout>

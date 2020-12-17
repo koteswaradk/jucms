@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <com.nxgenminds.eduminds.ju.cms.utils.ImageViewRounded
+                android:id="@+id/custom_view_discussion_forum_userImage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/custom_view_discussion_forum_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Mathew"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/custom_view_discussion_forum_detailed_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="15"
+                    android:textSize="14sp"
+                    android:textStyle="bold" >
+                </TextView>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/addAnswer"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/ic_add"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/custom_view_discussion_forum_detailed_time_when"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:gravity="right"
+                android:text="30 minutes ago"
+                android:textSize="10sp"
+                android:textStyle="italic" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custom_view_discussion_forum_detailed_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="What are the characteristics of a good editor?"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Last Reply"
+                android:textSize="12sp"
+                android:textStyle="italic" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custom_view_discussion_forum_detailed_lastreply1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="4"
+                android:textSize="14sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/custom_view_discussion_forum_detailed_lastreply2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:ems="4"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

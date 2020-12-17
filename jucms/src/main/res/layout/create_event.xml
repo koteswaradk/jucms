@@ -1,0 +1,282 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1" >
+
+    <LinearLayout
+        android:id="@+id/parent_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="#E1E1E1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/event_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/event_theme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bfort" />
+
+            <TextView
+                android:id="@+id/event_theme_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Change Theme"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/child2_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/event_name_container"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/event_editText_EventName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_hint"
+                    android:maxLength="140"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/event_editText_EventDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:hint="@string/event_description"
+                    android:maxLength="140"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Geolocation_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <com.nxgenminds.eduminds.ju.cms.utils.CustomAutoComplectTextView
+                    android:id="@+id/event_editText_eventgeoLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableLeft="@drawable/geolocation_red"
+                    android:gravity="left|center"
+                    android:hint="@string/location_hint"
+                    android:padding="15sp"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/create_event_rules_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/create_event_rules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/event_rules_label"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/DateTime_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/event_textView_eventStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="left|center"
+                        android:hint="@string/start_date_hint"
+                        android:paddingLeft="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/event_textView_eventStartTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="left|center"
+                        android:hint="@string/start_time_hint"
+                        android:paddingLeft="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/EndDateTime_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/event_textView_eventEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="left|center"
+                        android:hint="@string/end_date_hint"
+                        android:paddingLeft="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/event_textView_eventEndTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:gravity="left|center"
+                        android:hint="@string/end_time_hint"
+                        android:paddingLeft="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/create_event_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/InviteFriends_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/event_radiogroup_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <RadioButton
+                        android:id="@+id/event_radio_custom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/event_custom"
+                        android:textSize="17sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/event_radio_public"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/event_public"
+                        android:textSize="17sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/event_radio_org"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/event_org"
+                        android:textSize="17sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <!--
+                <ImageView
+                    android:id="@+id/event_image_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                     android:scaleType="fitXY"
+                    android:src="@drawable/plus"
+                    android:visibility="invisible" >
+                </ImageView>
+                -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/inviteFriends_display_c"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/inviteFriends_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@android:color/white"
+                    android:gravity="left|center"
+                    android:hint="@string/invite_people_hint"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/event_image_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/plus"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

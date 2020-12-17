@@ -1,0 +1,27 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E1E1E1" >
+
+        <TextView
+            android:id="@+id/Noevents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No events found"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/eventscurrentlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

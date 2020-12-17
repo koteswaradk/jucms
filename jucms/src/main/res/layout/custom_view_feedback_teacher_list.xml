@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp" >
+
+    <com.nxgenminds.eduminds.ju.cms.utils.ImageViewRounded
+        android:id="@+id/custom_view_feedback_teacher_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/custom_view_feedback_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/custom_view_feedback_teacher_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Subject" />
+
+        <TextView
+            android:id="@+id/custom_view_feedback_teacher_stream_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="BBA ,SEM-II,SEC-A"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/custom_view_feedback_teacher_subject_percent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

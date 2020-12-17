@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E1E1E1"
+    android:orientation="horizontal" >
+
+    <com.nxgenminds.eduminds.ju.cms.utils.ImageViewRounded
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="Krunal Patel"
+        android:textSize="17sp" />
+
+</LinearLayout>

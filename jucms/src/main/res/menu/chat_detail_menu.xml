@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/chat_clear"
+        android:title="@string/chat_clear"
+        myapp:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/chat_delete"
+        android:title="@string/chat_delete"
+        myapp:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/chat_view_profile"
+        android:title="@string/chat_view_profile"
+        myapp:showAsAction="collapseActionView"/>
+
+</menu>

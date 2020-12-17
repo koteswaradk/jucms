@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/broad_fragment_broadcast_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/broad_broadcast_click_to_load_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/timefeed"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/broad_fragment_broadcast_noData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=" No New Broadcast Messages"
+                android:textColor="#20b2aa"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/broadbroad_listC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <ListView
+                    android:id="@+id/broad_fragment_broadcast_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#b5b5b5"
+                    android:fastScrollEnabled="false"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/broad_buttons_layout_broadcast_list"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent" >
+
+        <ImageButton
+            android:id="@+id/broad_button_createBroadcast"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/timelinestatus" />
+    </RelativeLayout>
+
+</RelativeLayout>

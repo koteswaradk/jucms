@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:3:7-62
+		INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml
+		INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:5:7-32
+		INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml
+		INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:4:7-30
+		INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml
+		INJECTED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml
+application
+ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:6:5-7:19
+	android:label
+		ADDED from /Users/koteswara/Documents/jucms/pulltorefresh/src/main/AndroidManifest.xml:6:18-50

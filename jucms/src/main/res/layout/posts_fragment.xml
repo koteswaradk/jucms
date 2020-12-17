@@ -1,0 +1,54 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container_feed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noFeed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Welcome to your Timefeed! Check all the recent updates from all your connections right here! Click"
+            android:textColor="#20b2aa"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/LightGray" >
+
+            <ListView
+                android:id="@+id/timeloglistView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null" />
+
+            <RelativeLayout
+                android:id="@+id/buttom_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent" >
+
+                <ImageButton
+                    android:id="@+id/statusbutton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/timelinestatus" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

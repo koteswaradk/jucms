@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/event_c"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal" >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/upcomingEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:text="Upcoming"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/h_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_alignBottom="@+id/upcomingEvents"
+                android:background="#3B9DDA"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/currentEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:text="Current"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/h_current"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_alignBottom="@+id/currentEvents"
+                android:background="#3B9DDA"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/archivedEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:text="Archived"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/h_archived"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_alignBottom="@+id/archivedEvents"
+                android:background="#3B9DDA"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame_user_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/event_c" />
+
+    <RelativeLayout
+        android:id="@+id/buttom_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent" >
+
+        <ImageButton
+            android:id="@+id/addEvents"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/chatbutton_userevents"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</RelativeLayout>

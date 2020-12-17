@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:padding="1dip" >
+<RelativeLayout  
+    android:id="@+id/relativefortext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView  
+      android:paddingLeft="20dp"
+     android:id="@+id/textdisplay"
+     android:text="sapmle code for diasplay"
+     android:textSize="18dp"
+     android:layout_marginTop="20dp"
+     android:textColor="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    
+    	
+</RelativeLayout>
+
+<RelativeLayout  
+    android:id="@+id/relativefortextimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/relativefortext"
+    >
+    <com.polites.android.GestureImageView
+       
+        android:id="@+id/image"
+        android:paddingTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="centerInside"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.75" />
+   
+ </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

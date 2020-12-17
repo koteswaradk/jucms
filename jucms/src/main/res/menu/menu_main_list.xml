@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_main_ToJson"
+        android:title="@string/toJson"
+        android:visible="false"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_main_select_all"
+        android:title="@string/select_all"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_main_unselect_all"
+        android:title="@string/unselect_all"
+        android:visible="false"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_main_exit"
+        android:title="@string/exit"
+        yourapp:showAsAction="ifRoom"/>
+
+</menu>

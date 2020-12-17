@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jucms.iml" filepath="$PROJECT_DIR$/.idea/modules/jucms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gestureimageview/jucms.gestureimageview.iml" filepath="$PROJECT_DIR$/.idea/modules/gestureimageview/jucms.gestureimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jucms/jucms.jucms.iml" filepath="$PROJECT_DIR$/.idea/modules/jucms/jucms.jucms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pulltorefresh/jucms.pulltorefresh.iml" filepath="$PROJECT_DIR$/.idea/modules/pulltorefresh/jucms.pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simplecropimagelib/jucms.simplecropimagelib.iml" filepath="$PROJECT_DIR$/.idea/modules/simplecropimagelib/jucms.simplecropimagelib.iml" />
+    </modules>
+  </component>
+</project>

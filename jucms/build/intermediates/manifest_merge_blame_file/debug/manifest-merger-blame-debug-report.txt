@@ -1,0 +1,855 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nxgenminds.eduminds.ju.cms"
+4    android:versionCode="5"
+5    android:versionName="1.4" >
+6
+7    <uses-sdk
+7-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:7:5-9:41
+8        android:minSdkVersion="21"
+8-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:8:9-35
+9        android:targetSdkVersion="21" />
+9-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:9:9-38
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:11:5-67
+11-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:11:22-64
+12    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+12-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:12:5-75
+12-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:12:22-72
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:13:5-65
+13-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:13:22-62
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:14:5-81
+14-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:14:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:15:5-80
+15-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:15:22-77
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:16:5-79
+16-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:16:22-76
+17    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+17-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:17:5-71
+17-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:17:22-68
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:18:5-68
+18-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:18:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:19:5-82
+19-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:19:22-79
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:20:5-66
+20-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:20:22-63
+21
+22    <permission
+22-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:22:5-24:47
+23        android:name="com.youflik.youconnect.ju.cms.permission.C2D_MESSAGE"
+23-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:23:9-76
+24        android:protectionLevel="signature" />
+24-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.youflik.youconnect.ju.cms.permission.C2D_MESSAGE" />
+26-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:26:5-92
+26-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:26:22-89
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/477bfe274747149e8e61d2ceda223638/play-services-maps-12.0.1/AndroidManifest.xml:26:5-28:35
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/477bfe274747149e8e61d2ceda223638/play-services-maps-12.0.1/AndroidManifest.xml:27:9-41
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/477bfe274747149e8e61d2ceda223638/play-services-maps-12.0.1/AndroidManifest.xml:28:9-32
+31
+32    <permission
+32-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:28:5-30:47
+33        android:name="com.nxgenminds.eduminds.ju.cms.permission.C2D_MESSAGE"
+33-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:29:9-63
+34        android:protectionLevel="signature" />
+34-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:30:9-44
+35
+36    <uses-permission android:name="com.nxgenminds.eduminds.ju.cms.permission.C2D_MESSAGE" />
+36-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:32:5-79
+36-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:32:22-76
+37
+38    <application
+38-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:28:5-305:19
+39        android:name="com.nxgenminds.eduminds.ju.cms.utils.UILApplication"
+39-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:29:9-75
+40        android:allowBackup="true"
+40-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:30:9-35
+41        android:debuggable="true"
+42        android:icon="@drawable/jgiappicon"
+42-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:31:9-44
+43        android:label="@string/app_name"
+43-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:32:9-41
+44        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+44-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:33:9-67
+45        <meta-data
+45-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:34:9-36:69
+46            android:name="com.google.android.gms.version"
+46-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:35:13-58
+47            android:value="@integer/google_play_services_version" />
+47-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:36:13-66
+48
+49        <activity
+49-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:38:9-47:20
+50            android:name="com.nxgenminds.eduminds.ju.cms.userLogin.MainSplashScreen"
+50-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:39:13-85
+51            android:label="@string/app_name"
+51-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:40:13-45
+52            android:screenOrientation="portrait" >
+52-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:41:13-49
+53            <intent-filter>
+53-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:42:13-46:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:43:17-69
+54-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:43:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:45:17-77
+56-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:45:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:48:9-52:20
+60            android:name="com.nxgenminds.eduminds.ju.cms.HomePage"
+60-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:49:13-67
+61            android:screenOrientation="portrait"
+61-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:50:13-49
+62            android:theme="@style/Theme.AppCompat" >
+62-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:51:13-51
+63        </activity>
+64        <activity
+64-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:53:9-57:20
+65            android:name="com.nxgenminds.eduminds.ju.cms.messages.ChatDetailActivity"
+65-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:54:13-86
+66            android:screenOrientation="portrait"
+66-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:55:13-49
+67            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+67-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:56:13-71
+68        </activity>
+69        <activity
+69-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:58:10-62:20
+70            android:name="com.nxgenminds.eduminds.ju.cms.noticeboard.NoticeBoardDeatailActivity"
+70-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:59:13-97
+71            android:screenOrientation="portrait"
+71-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:60:13-49
+72            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+72-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:61:13-71
+73        </activity>
+74        <activity
+74-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:64:10-68:20
+75            android:name="com.nxgenminds.eduminds.ju.cms.noticeboard.NoticeBoardImageDisplayActivity"
+75-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:65:13-102
+76            android:screenOrientation="portrait"
+76-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:66:13-49
+77            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+77-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:67:13-71
+78        </activity>
+79        <activity
+79-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:69:9-73:20
+80            android:name="com.nxgenminds.eduminds.ju.cms.placementsboard.PlacementsBoardDeatailActivity"
+80-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:70:13-105
+81            android:screenOrientation="portrait"
+81-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:71:13-49
+82            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+82-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:72:13-71
+83        </activity>
+84        <activity
+84-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:75:10-79:20
+85            android:name="com.nxgenminds.eduminds.ju.cms.placementsboard.PlacementsBoardImageDisplayActivity"
+85-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:76:13-110
+86            android:screenOrientation="portrait"
+86-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:77:13-49
+87            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+87-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:78:13-71
+88        </activity>
+89        <activity
+89-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:81:9-85:20
+90            android:name="com.nxgenminds.eduminds.ju.cms.NavMainActivity"
+90-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:82:13-74
+91            android:screenOrientation="portrait"
+91-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:83:13-49
+92            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+92-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:84:13-71
+93        </activity>
+94        <activity
+94-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:86:9-90:20
+95            android:name="com.nxgenminds.eduminds.ju.cms.messages.SearchUserMessages"
+95-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:87:13-86
+96            android:screenOrientation="portrait"
+96-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:88:13-49
+97            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+97-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:89:13-71
+98        </activity>
+99        <activity
+99-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:91:9-95:20
+100            android:name="com.nxgenminds.eduminds.ju.cms.guestLogin.GuestLogin"
+100-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:92:13-80
+101            android:screenOrientation="portrait"
+101-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:93:13-49
+102            android:windowSoftInputMode="adjustResize" >
+102-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:94:13-55
+103        </activity>
+104        <activity
+104-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:96:9-100:20
+105            android:name="com.nxgenminds.eduminds.ju.cms.userLogin.MemberLogin"
+105-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:97:13-80
+106            android:screenOrientation="portrait"
+106-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:98:13-49
+107            android:windowSoftInputMode="adjustResize" >
+107-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:99:13-55
+108        </activity>
+109        <activity
+109-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:101:9-104:20
+110            android:name="com.nxgenminds.eduminds.ju.cms.classSchedule.ClassScheduleDetailActivity"
+110-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:102:13-100
+111            android:screenOrientation="portrait" >
+111-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:103:13-49
+112        </activity>
+113        <activity
+113-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:105:9-108:20
+114            android:name="com.nxgenminds.eduminds.ju.cms.classSchedule.AdminFilterView"
+114-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:106:13-88
+115            android:screenOrientation="portrait" >
+115-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:107:13-49
+116        </activity>
+117        <activity
+117-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:109:9-113:20
+118            android:name="com.nxgenminds.eduminds.ju.cms.jgigroup.GroupTabMenuActivity"
+118-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:110:13-88
+119            android:screenOrientation="portrait"
+119-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:111:13-49
+120            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+120-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:112:13-71
+121        </activity>
+122        <activity
+122-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:114:9-118:20
+123            android:name="com.nxgenminds.eduminds.ju.cms.userprofile.UserTabMenuActivity"
+123-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:115:13-90
+124            android:screenOrientation="portrait"
+124-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:116:13-49
+125            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+125-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:117:13-71
+126        </activity>
+127        <activity
+127-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:119:9-123:20
+128            android:name="com.nxgenminds.eduminds.ju.cms.userprofile.UserProfileAlumni"
+128-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:120:13-88
+129            android:screenOrientation="portrait"
+129-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:121:13-49
+130            android:theme="@style/Theme.AppCompat.Light" >
+130-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:122:13-57
+131        </activity>
+132        <activity
+132-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:124:9-128:20
+133            android:name="com.nxgenminds.eduminds.ju.cms.ImagePagerActivity"
+133-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:125:13-77
+134            android:screenOrientation="portrait"
+134-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:126:13-49
+135            android:theme="@style/Theme.AppCompat.Light" >
+135-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:127:13-57
+136        </activity>
+137        <activity
+137-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:129:9-133:20
+138            android:name="com.nxgenminds.eduminds.ju.cms.thirdpartyprofile.ThirdPartyTabMenuActivity"
+138-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:130:13-102
+139            android:screenOrientation="portrait"
+139-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:131:13-49
+140            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+140-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:132:13-71
+141        </activity>
+142        <activity
+142-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:134:9-138:20
+143            android:name="com.nxgenminds.eduminds.ju.cms.guestLogin.GuestLoginTabMenuActivity"
+143-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:135:13-95
+144            android:screenOrientation="portrait"
+144-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:136:13-49
+145            android:theme="@style/Theme.AppCompat.Light" >
+145-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:137:13-57
+146        </activity>
+147        <activity
+147-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:139:9-143:20
+148            android:name="com.nxgenminds.eduminds.ju.cms.timefeed.LikeDetailActivity"
+148-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:140:13-86
+149            android:screenOrientation="portrait"
+149-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:141:13-49
+150            android:theme="@style/Theme.AppCompat.Light" >
+150-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:142:13-57
+151        </activity>
+152        <activity
+152-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:144:9-149:20
+153            android:name="com.nxgenminds.eduminds.ju.cms.statusUpdate.UserPostCreateAcitivty"
+153-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:145:13-94
+154            android:screenOrientation="portrait"
+154-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:146:13-49
+155            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+155-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:147:13-71
+156            android:windowSoftInputMode="adjustResize" >
+156-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:148:13-55
+157        </activity>
+158        <activity
+158-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:150:9-153:60
+159            android:name="com.nxgenminds.eduminds.ju.cms.contactFetcher.Contact_Fetcher_MainActivity"
+159-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:151:13-102
+160            android:screenOrientation="portrait"
+160-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:152:13-49
+161            android:theme="@style/Theme.AppCompat.Light" />
+161-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:153:13-57
+162        <activity
+162-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:154:9-156:52
+163            android:name="eu.janmuller.android.simplecropimage.CropImage"
+163-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:155:13-74
+164            android:screenOrientation="portrait" />
+164-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:156:13-49
+165
+166        <provider
+166-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:158:9-162:52
+167            android:name="com.nxgenminds.eduminds.ju.cms.utils.InternalStorageContentProvider"
+167-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:159:13-95
+168            android:authorities="com.youflik.youconnect.ju.cms.utils"
+168-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:160:13-70
+169            android:exported="true"
+169-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:161:13-36
+170            android:screenOrientation="portrait" />
+170-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:162:13-49
+171
+172        <activity
+172-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:164:9-167:74
+173            android:name="com.nxgenminds.eduminds.ju.cms.ViewProfilePhoto"
+173-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:165:13-75
+174            android:label=""
+174-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:166:13-29
+175            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+175-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:167:13-71
+176        <activity
+176-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:168:9-171:60
+177            android:name="com.nxgenminds.eduminds.ju.cms.userprofileupdate.UserProfileUpdate"
+177-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:169:13-94
+178            android:screenOrientation="portrait"
+178-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:170:13-49
+179            android:theme="@style/Theme.AppCompat.Light" />
+179-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:171:13-57
+180        <activity
+180-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:172:9-175:60
+181            android:name="com.nxgenminds.eduminds.ju.cms.Select_Connections"
+181-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:173:13-77
+182            android:screenOrientation="portrait"
+182-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:174:13-49
+183            android:theme="@style/Theme.AppCompat.Light" />
+183-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:175:13-57
+184        <activity
+184-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:176:9-179:60
+185            android:name="com.nxgenminds.eduminds.ju.cms.Select_Connections_Messages"
+185-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:177:13-86
+186            android:screenOrientation="portrait"
+186-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:178:13-49
+187            android:theme="@style/Theme.AppCompat.Light" />
+187-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:179:13-57
+188        <activity
+188-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:180:9-183:74
+189            android:name="com.nxgenminds.eduminds.ju.cms.Internship.AdminDetailView"
+189-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:181:13-85
+190            android:screenOrientation="portrait"
+190-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:182:13-49
+191            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+191-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:183:13-71
+192        <activity
+192-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:184:9-188:55
+193            android:name="com.nxgenminds.eduminds.ju.cms.Internship.CompanyAdminDetailView"
+193-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:185:13-92
+194            android:screenOrientation="portrait"
+194-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:186:13-49
+195            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+195-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:187:13-71
+196            android:windowSoftInputMode="adjustPan" />
+196-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:188:13-52
+197        <activity
+197-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:189:9-193:59
+198            android:name="com.nxgenminds.eduminds.ju.cms.SelectConnectionTabActivity"
+198-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:190:13-86
+199            android:screenOrientation="portrait"
+199-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:191:13-49
+200            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+200-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:192:13-71
+201            android:windowSoftInputMode="adjustNothing" />
+201-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:193:13-56
+202        <activity
+202-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:194:9-199:59
+203            android:name="com.nxgenminds.eduminds.ju.cms.events.EventDetailActivtiy"
+203-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:195:13-85
+204            android:label="Event Details"
+204-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:196:13-42
+205            android:screenOrientation="portrait"
+205-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:197:13-49
+206            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+206-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:198:13-71
+207            android:windowSoftInputMode="adjustNothing" />
+207-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:199:13-56
+208        <activity
+208-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:200:9-206:20
+209            android:name="com.youflik.youconnect.ju.cms.broadcast.BroadcastCompose"
+209-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:201:13-84
+210            android:label="Create Broadcast"
+210-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:202:13-45
+211            android:screenOrientation="portrait"
+211-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:203:13-49
+212            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+212-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:204:13-71
+213            android:windowSoftInputMode="adjustResize" >
+213-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:205:13-55
+214        </activity>
+215        <activity
+215-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:207:9-210:20
+216            android:name="com.nxgenminds.eduminds.ju.cms.events.UserCreateEvent"
+216-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:208:13-81
+217            android:screenOrientation="portrait" >
+217-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:209:13-49
+218        </activity>
+219        <activity
+219-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:211:9-214:20
+220            android:name="com.nxgenminds.eduminds.ju.cms.events.EventUpdateActivity"
+220-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:212:13-85
+221            android:screenOrientation="portrait" >
+221-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:213:13-49
+222        </activity>
+223        <activity
+223-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:215:9-218:20
+224            android:name="com.nxgenminds.eduminds.ju.cms.events.EventThemestThemes"
+224-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:216:13-84
+225            android:screenOrientation="portrait" >
+225-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:217:13-49
+226        </activity>
+227        <activity
+227-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:219:9-222:20
+228            android:name="com.nxgenminds.eduminds.ju.cms.search.SearchMembers"
+228-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:220:13-79
+229            android:screenOrientation="portrait" >
+229-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:221:13-49
+230        </activity>
+231        <activity
+231-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:223:9-226:20
+232            android:name="com.nxgenminds.eduminds.ju.cms.DiscussionForum.DiscussionsForumQuestionsActivity"
+232-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:224:13-108
+233            android:screenOrientation="portrait" >
+233-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:225:13-49
+234        </activity>
+235        <activity
+235-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:227:9-231:20
+236            android:name="com.nxgenminds.eduminds.ju.cms.LearningOutcomeStudentActivity"
+236-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:228:13-89
+237            android:screenOrientation="portrait"
+237-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:229:13-49
+238            android:windowSoftInputMode="adjustResize" >
+238-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:230:13-55
+239        </activity>
+240        <activity
+240-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:232:9-235:20
+241            android:name="com.nxgenminds.eduminds.ju.cms.attendence.TakeAttendenceActivtiy"
+241-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:233:13-92
+242            android:screenOrientation="portrait" >
+242-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:234:13-49
+243        </activity>
+244        <activity
+244-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:236:9-239:20
+245            android:name="com.nxgenminds.eduminds.ju.cms.DiscussionForum.DiscussionsFrmReplysActivity"
+245-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:237:13-103
+246            android:screenOrientation="portrait" >
+246-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:238:13-49
+247        </activity>
+248        <activity
+248-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:240:9-243:20
+249            android:name="com.nxgenminds.eduminds.ju.cms.events.EventThemes"
+249-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:241:13-77
+250            android:screenOrientation="portrait" >
+250-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:242:13-49
+251        </activity>
+252        <activity
+252-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:244:9-247:20
+253            android:name="com.nxgenminds.eduminds.ju.cms.events.EventUserSearchActivity"
+253-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:245:13-89
+254            android:screenOrientation="portrait" >
+254-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:246:13-49
+255        </activity>
+256        <activity
+256-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:248:9-252:20
+257            android:name="com.nxgenminds.eduminds.ju.cms.broadcast_new.BroadcastCreateActivity_new"
+257-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:249:13-100
+258            android:label="Create Broadcast"
+258-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:250:13-45
+259            android:screenOrientation="portrait" >
+259-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:251:13-49
+260        </activity>
+261        <activity
+261-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:253:9-257:20
+262            android:name="com.nxgenminds.eduminds.ju.cms.broadcast_new.BroadcastCustomFiltersListActivity_new"
+262-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:254:13-111
+263            android:label="Select"
+263-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:255:13-35
+264            android:screenOrientation="portrait" >
+264-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:256:13-49
+265        </activity>
+266        <activity
+266-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:258:9-261:20
+267            android:name="com.nxgenminds.eduminds.ju.cms.FeedbackAdmin.FeedBackAdminFilterActivity"
+267-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:259:13-100
+268            android:screenOrientation="portrait" >
+268-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:260:13-49
+269        </activity>
+270        <activity
+270-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:262:9-265:20
+271            android:name="com.nxgenminds.eduminds.ju.cms.FeedbackAdmin.FeedBackAdminTeacherListingActivity"
+271-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:263:13-108
+272            android:screenOrientation="portrait" >
+272-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:264:13-49
+273        </activity>
+274        <activity
+274-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:266:9-269:20
+275            android:name="com.nxgenminds.eduminds.ju.cms.FeedbackAdmin.FeedbackTeacherDetailActivity"
+275-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:267:13-102
+276            android:screenOrientation="portrait" >
+276-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:268:13-49
+277        </activity>
+278        <activity
+278-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:270:9-275:20
+279            android:name="com.nxgenminds.eduminds.ju.cms.ResetPassword"
+279-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:271:13-72
+280            android:label="Reset Password"
+280-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:272:13-43
+281            android:screenOrientation="portrait"
+281-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:273:13-49
+282            android:windowSoftInputMode="adjustResize" >
+282-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:274:13-55
+283        </activity>
+284        <activity
+284-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:276:9-280:20
+285            android:name="com.nxgenminds.eduminds.ju.cms.guestLogin.GuestRegistration"
+285-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:277:13-87
+286            android:screenOrientation="portrait"
+286-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:278:13-49
+287            android:windowSoftInputMode="adjustResize" >
+287-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:279:13-55
+288        </activity>
+289        <activity
+289-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:281:9-284:20
+290            android:name="com.nxgenminds.eduminds.ju.cms.guestAdmissions.AdmissionDeatailActivity"
+290-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:282:13-99
+291            android:screenOrientation="portrait" >
+291-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:283:13-49
+292        </activity>
+293        <activity
+293-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:285:9-288:20
+294            android:name="com.nxgenminds.eduminds.ju.cms.guestAcademics.AcademicsDeatailActivity"
+294-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:286:13-98
+295            android:screenOrientation="portrait" >
+295-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:287:13-49
+296        </activity>
+297        <activity
+297-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:289:9-292:20
+298            android:name="com.nxgenminds.eduminds.ju.cms.guestEntrnaceTest.EntranceTestResultDeatailActivity"
+298-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:290:13-110
+299            android:screenOrientation="portrait" >
+299-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:291:13-49
+300        </activity>
+301
+302        <receiver
+302-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:294:9-302:20
+303            android:name="com.nxgenminds.eduminds.ju.cms.broadcastreceivers.JucmsGCMBroadCastReceiver"
+303-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:295:13-103
+304            android:permission="com.google.android.c2dm.permission.SEND" >
+304-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:296:13-73
+305            <intent-filter>
+305-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:297:13-301:29
+306                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+306-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:298:17-81
+306-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:298:25-78
+307
+308                <category android:name="com.youflik.youconnect.ju.cms.broadcastreceivers" />
+308-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:300:17-93
+308-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:300:27-90
+309            </intent-filter>
+310        </receiver>
+311
+312        <service android:name="com.nxgenminds.eduminds.ju.cms.services.JucmsGCMIntentService" />
+312-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:304:9-97
+312-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:304:18-94
+313
+314        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+314-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/66c19043e02c768663552ef78048dd35/play-services-cast-framework-12.0.1/AndroidManifest.xml:8:9-100
+314-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/66c19043e02c768663552ef78048dd35/play-services-cast-framework-12.0.1/AndroidManifest.xml:8:19-97
+315
+316        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+316-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/66c19043e02c768663552ef78048dd35/play-services-cast-framework-12.0.1/AndroidManifest.xml:10:9-104
+316-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/66c19043e02c768663552ef78048dd35/play-services-cast-framework-12.0.1/AndroidManifest.xml:10:18-101
+317        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+317-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/66c19043e02c768663552ef78048dd35/play-services-cast-framework-12.0.1/AndroidManifest.xml:11:9-93
+317-->[com.google.android.gms:play-services-cast-framework:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/66c19043e02c768663552ef78048dd35/play-services-cast-framework-12.0.1/AndroidManifest.xml:11:18-90
+318
+319        <meta-data
+319-->[com.android.support:mediarouter-v7:26.1.0] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/2757febc0a1c6f55142e2a9ac500328a/mediarouter-v7-26.1.0/AndroidManifest.xml:23:9-25:38
+320            android:name="android.support.VERSION"
+320-->[com.android.support:mediarouter-v7:26.1.0] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/2757febc0a1c6f55142e2a9ac500328a/mediarouter-v7-26.1.0/AndroidManifest.xml:24:13-51
+321            android:value="26.1.0" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+321-->[com.android.support:mediarouter-v7:26.1.0] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/2757febc0a1c6f55142e2a9ac500328a/mediarouter-v7-26.1.0/AndroidManifest.xml:25:13-35
+322        <activity
+322-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/b368f4c87db39482e4e6ef8e9eff4105/play-services-ads-lite-12.0.1/AndroidManifest.xml:29:9-33:64
+323            android:name="com.google.android.gms.ads.AdActivity"
+323-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/b368f4c87db39482e4e6ef8e9eff4105/play-services-ads-lite-12.0.1/AndroidManifest.xml:30:13-65
+324            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+324-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/b368f4c87db39482e4e6ef8e9eff4105/play-services-ads-lite-12.0.1/AndroidManifest.xml:31:13-122
+325            android:exported="false"
+325-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/b368f4c87db39482e4e6ef8e9eff4105/play-services-ads-lite-12.0.1/AndroidManifest.xml:32:13-37
+326            android:theme="@android:style/Theme.Translucent" />
+326-->[com.google.android.gms:play-services-ads-lite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/b368f4c87db39482e4e6ef8e9eff4105/play-services-ads-lite-12.0.1/AndroidManifest.xml:33:13-61
+327
+328        <receiver
+328-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:30:9-34:20
+329            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+329-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:31:13-78
+330            android:enabled="true"
+330-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:32:13-35
+331            android:exported="false" >
+331-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:33:13-37
+332        </receiver>
+333
+334        <service
+334-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:36:9-39:40
+335            android:name="com.google.android.gms.analytics.AnalyticsService"
+335-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:37:13-77
+336            android:enabled="true"
+336-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:38:13-35
+337            android:exported="false" />
+337-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:39:13-37
+338        <service
+338-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:40:9-44:72
+339            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+339-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:41:13-80
+340            android:enabled="true"
+340-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:42:13-35
+341            android:exported="false"
+341-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:43:13-37
+342            android:permission="android.permission.BIND_JOB_SERVICE" />
+342-->[com.google.android.gms:play-services-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/90838eff36be557bc79af88c840e2205/play-services-analytics-12.0.1/AndroidManifest.xml:44:13-69
+343
+344        <activity
+344-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:25:9-34:20
+345            android:name="com.google.android.gms.appinvite.PreviewActivity"
+345-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:26:13-76
+346            android:exported="true"
+346-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:27:13-36
+347            android:theme="@style/Theme.AppInvite.Preview" >
+347-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:28:13-59
+348            <intent-filter>
+348-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:29:13-33:29
+349                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+349-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:30:17-90
+349-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:30:25-87
+350
+351                <category android:name="android.intent.category.DEFAULT" />
+351-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:32:17-76
+351-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:32:27-73
+352            </intent-filter>
+353        </activity>
+354        <activity
+354-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:23:9-27:75
+355            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+355-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:24:13-93
+356            android:excludeFromRecents="true"
+356-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:25:13-46
+357            android:exported="false"
+357-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:26:13-37
+358            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+358-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:27:13-72
+359        <!--
+360            Service handling Google Sign-In user revocation. For apps that do not integrate with
+361            Google Sign-In, this service will never be started.
+362        -->
+363        <service
+363-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:33:9-36:110
+364            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+364-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:34:13-89
+365            android:exported="true"
+365-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:35:13-36
+366            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+366-->[com.google.android.gms:play-services-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/633f250918fce68504b70c9d7ff9c643/play-services-auth-12.0.1/AndroidManifest.xml:36:13-107
+367
+368        <activity
+368-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:23:9-29:75
+369            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+369-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:24:13-85
+370            android:excludeFromRecents="true"
+370-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:25:13-46
+371            android:exported="true"
+371-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:26:13-36
+372            android:launchMode="singleInstance"
+372-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:27:13-48
+373            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+373-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:28:13-102
+374            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+374-->[com.google.firebase:firebase-auth:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a604775fa0fb7d330a261419e0ecf574/firebase-auth-12.0.1/AndroidManifest.xml:29:13-72
+375        <activity
+375-->[com.google.android.gms:play-services-base:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/ff2facc11095cc250070125cb103eaba/play-services-base-12.0.1/AndroidManifest.xml:23:9-26:75
+376            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+376-->[com.google.android.gms:play-services-base:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/ff2facc11095cc250070125cb103eaba/play-services-base-12.0.1/AndroidManifest.xml:24:13-79
+377            android:exported="false"
+377-->[com.google.android.gms:play-services-base:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/ff2facc11095cc250070125cb103eaba/play-services-base-12.0.1/AndroidManifest.xml:25:13-37
+378            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+378-->[com.google.android.gms:play-services-base:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/ff2facc11095cc250070125cb103eaba/play-services-base-12.0.1/AndroidManifest.xml:26:13-72
+379        <!--
+380             FirebaseMessagingService performs security checks at runtime,
+381             no need for explicit permissions despite exported="true"
+382        -->
+383        <service
+383-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:28:9-34:19
+384            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+384-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:29:13-82
+385            android:exported="true" >
+385-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:30:13-36
+386            <intent-filter android:priority="-500" >
+386-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:31:13-33:29
+386-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:31:28-51
+387                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+387-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:32:17-78
+387-->[com.google.firebase:firebase-messaging:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/daeb09a9dece04b8205a4419bbbdd3c1/firebase-messaging-12.0.1/AndroidManifest.xml:32:25-75
+388            </intent-filter>
+389        </service>
+390        <service
+390-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:27:9-30:40
+391            android:name="com.google.android.gms.tagmanager.TagManagerService"
+391-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:28:13-79
+392            android:enabled="true"
+392-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:29:13-35
+393            android:exported="false" />
+393-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:30:13-37
+394
+395        <activity
+395-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:32:9-44:20
+396            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+396-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:33:13-87
+397            android:exported="true"
+397-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:34:13-36
+398            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+398-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:35:13-37
+399            <intent-filter>
+399-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:36:13-43:29
+400                <data android:scheme="tagmanager.c.com.nxgenminds.eduminds.ju.cms" />
+400-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:37:17-72
+400-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:37:23-69
+401
+402                <action android:name="android.intent.action.VIEW" />
+402-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:39:17-69
+402-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:39:25-66
+403
+404                <category android:name="android.intent.category.DEFAULT" />
+404-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:32:17-76
+404-->[com.google.android.gms:play-services-appinvite:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a8b665a304863b2c6982cfba57403dfc/play-services-appinvite-12.0.1/AndroidManifest.xml:32:27-73
+405                <category android:name="android.intent.category.BROWSABLE" />
+405-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:42:17-78
+405-->[com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/162f8cc5d95445b2bdbc2a04dc351377/play-services-tagmanager-api-12.0.1/AndroidManifest.xml:42:27-75
+406            </intent-filter>
+407        </activity>
+408
+409        <receiver
+409-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:28:9-32:20
+410            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+410-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:29:13-85
+411            android:enabled="true"
+411-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:30:13-35
+412            android:exported="false" >
+412-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:31:13-37
+413        </receiver>
+414        <receiver
+414-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:33:9-41:20
+415            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+415-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:34:13-100
+416            android:enabled="true"
+416-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:35:13-35
+417            android:exported="true"
+417-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:36:13-36
+418            android:permission="android.permission.INSTALL_PACKAGES" >
+418-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:37:13-69
+419            <intent-filter>
+419-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:38:13-40:29
+420                <action android:name="com.android.vending.INSTALL_REFERRER" />
+420-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:39:17-79
+420-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:39:25-76
+421            </intent-filter>
+422        </receiver>
+423
+424        <service
+424-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:43:9-46:40
+425            android:name="com.google.android.gms.measurement.AppMeasurementService"
+425-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:44:13-84
+426            android:enabled="true"
+426-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:45:13-35
+427            android:exported="false" />
+427-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:46:13-37
+428        <service
+428-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:47:9-51:72
+429            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+429-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:48:13-87
+430            android:enabled="true"
+430-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:49:13-35
+431            android:exported="false"
+431-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:50:13-37
+432            android:permission="android.permission.BIND_JOB_SERVICE" />
+432-->[com.google.firebase:firebase-analytics:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/1c8a98d1b16cc224ed5851131a263476/firebase-analytics-12.0.1/AndroidManifest.xml:51:13-69
+433
+434        <receiver
+434-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:35:9-44:20
+435            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+435-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:36:13-78
+436            android:exported="true"
+436-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:37:13-36
+437            android:permission="com.google.android.c2dm.permission.SEND" >
+437-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:38:13-73
+438            <intent-filter>
+438-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:39:13-43:29
+439                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+439-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:298:17-81
+439-->/Users/koteswara/Documents/jucms/jucms/src/main/AndroidManifest.xml:298:25-78
+440
+441                <category android:name="com.nxgenminds.eduminds.ju.cms" />
+441-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:42:17-61
+441-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:42:27-58
+442            </intent-filter>
+443        </receiver>
+444        <!--
+445             FirebaseInstanceIdService performs security checks at runtime,
+446             no need for explicit permissions despite exported="true"
+447        -->
+448        <service
+448-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:50:9-56:19
+449            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+449-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:51:13-77
+450            android:exported="true" >
+450-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:52:13-36
+451            <intent-filter android:priority="-500" >
+451-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:53:13-55:29
+451-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:53:28-51
+452                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+452-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:54:17-80
+452-->[com.google.firebase:firebase-iid:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/a7ca90a41e40350e3a4f6d717f855608/firebase-iid-12.0.1/AndroidManifest.xml:54:25-77
+453            </intent-filter>
+454        </service>
+455
+456        <provider
+456-->[com.google.firebase:firebase-common:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/df20f6a3271878934e9d430adc89f928/firebase-common-12.0.1/AndroidManifest.xml:8:9-12:39
+457            android:name="com.google.firebase.provider.FirebaseInitProvider"
+457-->[com.google.firebase:firebase-common:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/df20f6a3271878934e9d430adc89f928/firebase-common-12.0.1/AndroidManifest.xml:9:13-77
+458            android:authorities="com.nxgenminds.eduminds.ju.cms.firebaseinitprovider"
+458-->[com.google.firebase:firebase-common:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/df20f6a3271878934e9d430adc89f928/firebase-common-12.0.1/AndroidManifest.xml:10:13-72
+459            android:exported="false"
+459-->[com.google.firebase:firebase-common:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/df20f6a3271878934e9d430adc89f928/firebase-common-12.0.1/AndroidManifest.xml:11:13-37
+460            android:initOrder="100" />
+460-->[com.google.firebase:firebase-common:12.0.1] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/df20f6a3271878934e9d430adc89f928/firebase-common-12.0.1/AndroidManifest.xml:12:13-36
+461
+462        <meta-data
+462-->[android.arch.lifecycle:runtime:1.0.0] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/2651008cd98233e6b4b850667bef3705/runtime-1.0.0/AndroidManifest.xml:25:9-27:47
+463            android:name="android.arch.lifecycle.VERSION"
+463-->[android.arch.lifecycle:runtime:1.0.0] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/2651008cd98233e6b4b850667bef3705/runtime-1.0.0/AndroidManifest.xml:26:13-58
+464            android:value="27.0.0-SNAPSHOT" />
+464-->[android.arch.lifecycle:runtime:1.0.0] /Users/koteswara/.gradle/caches/transforms-2/files-2.1/2651008cd98233e6b4b850667bef3705/runtime-1.0.0/AndroidManifest.xml:27:13-44
+465    </application>
+466
+467</manifest>

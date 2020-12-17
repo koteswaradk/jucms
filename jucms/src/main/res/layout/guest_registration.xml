@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/guestloginMemberTextview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Guest"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/guestloginLoginTextview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Guest Registration"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/guestloginName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/guestloginPhoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/guestloginemail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/guestlogindob"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:text="D.O.B"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/guestlogingender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:entries="@array/spinner_gender"
+                    android:gravity="center_vertical"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                 android:visibility="gone"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/guestpassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Password"
+                   
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/guestloginRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="5dp"
+                    android:text="REGISTER"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

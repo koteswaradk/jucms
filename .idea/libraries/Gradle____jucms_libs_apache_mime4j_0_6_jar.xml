@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./jucms/libs/apache-mime4j-0.6.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jucms/libs/apache-mime4j-0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

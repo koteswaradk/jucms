@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="7dp"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
+    android:paddingRight="5dp" >
+
+    <!--
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Teacher Fragment" />
+    -->
+
+    <EditText
+        android:id="@+id/searchEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:autoText="true"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_user_search"
+        android:hint="search..."
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingBottom="14dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="14dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:digits="0123456789qwertzuiopasdfghjklyxcvbnm_-"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/NoTeachers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/teachersgridview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:columnWidth="75dp"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="4"
+        android:verticalSpacing="4dp" >
+    </GridView>
+
+</LinearLayout>

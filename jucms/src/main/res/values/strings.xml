@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JU CMS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Labels -->
+    <string name="label_activity_examples">Activity Examples</string>
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+    <string name="button_image_list">ListView</string>
+    <string name="button_image_grid">GridView</string>
+    <string name="button_image_pager">ViewPager</string>
+    <string name="button_image_gallery">Gallery</string>
+    <string name="descr_image">Image</string>
+
+    <!-- events -->
+    <!-- strings for create event -->
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="create_event">Create Event</string>
+    <string name="create_event_hint">Title(dinner,drinks,party...)</string>
+    <string name="start_date_hint">Start Date</string>
+    <string name="start_time_hint">Start Time</string>
+    <string name="end_date_hint">End Date</string>
+    <string name="end_time_hint">End Time</string>
+    <string name="time_hint">(GMT-5:00)Indian Standard Time</string>
+    <string name="location_hint">Location(Optional)</string>
+    <string name="invite_people_hint">Invite people</string>
+    <string name="submit_text">Submit</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="event_description">Description</string>
+    <string name="event_custom">Custom</string>
+    <string name="event_public">Public</string>
+    <string name="event_org">Org Event</string>
+    <string name="event_friends">Friends</string>
+    <string name="members_add">Add</string>
+    <string name="members_select_all">Select All</string>
+    <string name="members_exit">Exit</string>
+    <string name="update_text">Update</string>
+    <string name="create_text">Create</string>
+    <string name="event_rules_label">Event Rules</string>
+
+    <!-- string for Settings -->
+    <string name="settings_jayakarnataka">JU CMS</string>
+    <string name="settings_notifications"> Notifications</string>
+    <string name="settings_general">General</string>
+    <string name="settings_chat">Chat</string>
+    <string name="settings_changepassword">Change Password</string>
+    <string name="settings_fontsize">Font Size</string>
+    <string name="settings_imagequality">Image Quality</string>
+    <string name="settings_language">Langauage</string>
+
+    <!-- strings for Settings-image -->
+    <string name="settings_lower">Lower</string>
+    <string name="settings_high">High</string>
+    <string name="settings_medium">Medium</string>
+
+    <!-- strings for Settings-fontsize -->
+    <string name="settings_small">Small</string>
+    <string name="settings_normal">Normal</string>
+    <string name="settings_large">Large</string>
+
+    <!-- strings for Settings-language -->
+    <string name="settings_english">English</string>
+    <string name="settings_kannada">Kannada</string>
+    <string name="settings_hindi">Hindi</string>
+
+    <!-- strings for Settings-Chat -->
+    <string name="settings_sound">Sound</string>
+    <string name="settings_vibration">Vibration</string>
+
+    <!-- strings for Settings-notifications -->
+    <string name="settings_likepost">Someone likes your post</string>
+    <string name="settings_sendmessage">Someone sends you message</string>
+    <string name="settings_notifysound">Notification Sound</string>
+    <string name="settings_likepv">Someone likes your Photo/Video</string>
+    <string name="settings_connectionrequest">Someone sends/accepts connection request</string>
+    <string name="settings_events">Events</string>
+    <string name="settings_polling">Polling</string>
+
+    <!-- strings for Settings-password -->
+    <string name="settings_newpassword">New password</string>
+    <string name="settings_currentpassword">Current password</string>
+    <string name="settings_confirmpassword">Confirm password</string>
+    <string name="settings_cancel">Cancel</string>
+    <string name="settings_save">Save</string>
+
+    <!-- strings for polling -->
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="polling_create_poll">Create Poll</string>
+    <string name="polling_ask_question">Ask a Question</string>
+    <string name="polling_add_option">Add an option</string>
+    <string name="polling_submit">Submit</string>
+
+    <!-- Contact fetcher -->
+    <string name="image">Contacs Image</string>
+    <string name="title_activity_display_contact">DisplayContactActivity</string>
+    <string name="contact_id">Contact Id :</string>
+    <string name="contact_name">Contact Name :</string>
+    <string name="contact_email">Contact E-Mail :</string>
+    <string name="contact_number">Contact Number :</string>
+    <string name="button_msg">Send Message</string>
+    <string name="button_call">Make Call</string>
+    <string name="toJson">Submit</string>
+    <string name="select_all">Select All</string>
+    <string name="exit">exit</string>
+    <string name="unselect_all">Unselect All</string>
+
+    <!-- status update -->
+    <string name="writepost">Post Something</string>
+    <string name="post">Post</string>
+    <string name="phone">Gallery Videos</string>
+    <string name="computer">Gallery Photos</string>
+    <string name="gamepad">Gamepad</string>
+    <string name="camera">Camera</string>
+    <string name="video">Video</string>
+    <string name="email">EMail</string>
+    <string name="chat_clear">Clear Conversation</string>
+    <string name="chat_delete">Delete Conversation</string>
+    <string name="chat_view_profile">View Profile</string>
+    <!-- strings for user profile update in jaya karnataka -->
+    <string name="memberName">Name</string>
+    <string name="memberPhone">Phone</string>
+    <string name="memberProfession">Profession</string>
+    <string name="memberEmail">Email</string>
+    <string name="memberGender">Gender</string>
+    <string name="memberCity">City</string>
+    <string name="memberPincode">Pincode</string>
+    <string name="memberDOB">Date of Birth</string>
+    <string name="memberAddress">Full Address</string>
+    <string name="memberLifeTime">LifeTime</string>
+    <string name="memberYearly">Yearly</string>
+    <string name="memberAcceptTerms">I have read, and accept terms of use and privacy statement/policy</string>
+    <string name="memberStudiedAt">Studied At</string>
+    <string name="memberWorkingAt">Working At</string>
+    <string name="memberFirstName">First Name</string>
+    <string name="memberLastName">Last Name</string>
+    <string name="memberProfileUpdate">Profile Update</string>
+    <string name="memberUpdate">Update</string>
+    <string name="title_memberPersonal">Personal Info</string>
+    <string name="title_memberContact">Contact Info</string>
+    <string name="title_memberWork">Work and Education</string>
+    <string name="memberBio">Bio</string>
+
+    <!-- strings for internship_student_view.xml -->
+    <string name="string_internship_student_learning_outcome">Learning Outcome</string>
+
+    <!-- strings for internship_learning_outcome -->
+    <string name="string_internship_learning_outcome_from">From Date</string>
+    <string name="string_internship_learning_outcome_to">To Date</string>
+    <string name="string_internship_type">Type your learning outcome</string>
+    <string name="string_group_profile_founded_in">Founded in</string>
+    <string name="string_group_profile_key_members">Key Members</string>
+    <string name="string_group_profile_website">Website</string>
+
+    <!-- common strings -->
+    <string name="string_starts">Starts</string>
+    <string name="string_start_date">Start Date</string>
+    <string name="string_end_time">End Time</string>
+    <string name="string_start_time">Start Time</string>
+    <string name="string_custom">Custom</string>
+    <string name="string_public">Public</string>
+    <string name="string_next">Next</string>
+    <string name="string_new">New</string>
+    <string name="string_previous">Previous</string>
+    <string name="string_submit">Submit</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_designation">Designation</string>
+    <string name="string_department">Department</string>
+    <string name="string_from">From</string>
+    <string name="string_to">To</string>
+    <string name="string_mentor">Mento</string>
+    <string name="string_email">Email</string>
+    <string name="string_ph">Ph.No</string>
+    <string name="string_colon">:</string>
+    <string name="string_week">Week</string>
+    <string name="string_mission">Mission</string>
+    <string name="string_mission_detail">To provide quality education from elementary to group levels thereby creating human assests.Fuel economic growth,create systematic changes and sustainable improvements
+     by developeing new generation social entrepreneurs.</string>
+
+    <string-array name="classes_array">
+        <item>Regular Class</item>
+        <item>Extra Class 1</item>
+        <item>Extra Class 2</item>
+        <item>Extra Class 3</item>
+        <item>Extra Class 4</item>
+        <item>Extra Class 5</item>
+    </string-array>
+    <string-array name="spinner_gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

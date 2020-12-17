@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:background="@drawable/loginscreen"
+    android:orientation="vertical" >
+
+     <ImageView 
+        android:background="@drawable/bschoollogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="20dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+
+        <Button
+            android:id="@+id/homeMemberLogin"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:alpha=".7"
+            android:background="@drawable/whitebroder"
+            android:text="USER LOGIN"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/homeGuestLogin"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:alpha=".7"
+            android:background="@drawable/whitebroder"
+            android:text="GUEST LOGIN"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/powredby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:text="Powered By Yoobikwiti"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/homeNewMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Guest Registration"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

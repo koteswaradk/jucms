@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4C4C4"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_green"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Work In-Progress"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    
+</LinearLayout>

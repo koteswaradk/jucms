@@ -1,0 +1,311 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_userdetailsscrollViewpage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/update_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/update_user_cover_pic"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder_timefeed" />
+
+            <com.nxgenminds.eduminds.ju.cms.utils.ImageViewRounded
+                android:id="@+id/update_profilepic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/placeholder" />
+
+            <Button
+                android:id="@+id/update_done"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="16dp"
+                android:alpha=".75"
+                android:background="@drawable/round_button_transparent"
+                android:text="Done"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/update_titleTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <EditText
+                     android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/update_FirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                   
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your firstname"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:focusable="false"
+                     android:editable="false"
+                    android:id="@+id/update_LastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your lastname"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_user_contact_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:text="Contact"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                     android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/update_userphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your phone no."
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:focusable="false"
+                     android:editable="false"
+                    android:id="@+id/update_useremail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:focusable="false"
+                     android:editable="false"
+                    android:id="@+id/update_userblog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your blog"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+
+                <com.nxgenminds.eduminds.ju.cms.utils.CustomAutoComplectTextView
+                    android:id="@+id/update_useraddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Enter your address"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_user_edu_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:text="Education"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:focusable="false"
+                     android:editable="false"
+                    android:id="@+id/update_userstudied"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your qualification"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_user_work_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:text="Work"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:focusable="false"
+                     android:editable="false"
+                    android:id="@+id/update_userwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your work"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_user_bio_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:text="Bio"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:focusable="false"
+                     android:editable="false"
+                    android:id="@+id/update_user_bio_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Enter your bio"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="7dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

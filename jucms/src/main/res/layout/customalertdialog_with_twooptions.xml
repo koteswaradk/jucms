@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/rounded_layout_for_alertdialog"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/alertMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="Message"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#c7c7c7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@drawable/rounded_layout_for_alertdialog"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/negativeButton"
+                style="@style/TextColorBlue"
+                android:layout_width="0dip"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Negative" />
+             <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c7c7c7" />
+
+            <Button
+                android:id="@+id/positiveButton"
+                style="@style/TextColorBlue"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Positive"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

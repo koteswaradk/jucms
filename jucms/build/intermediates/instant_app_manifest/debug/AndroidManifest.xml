@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nxgenminds.eduminds.ju.cms"
+    android:targetSandboxVersion="2"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.youflik.youconnect.ju.cms.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.youflik.youconnect.ju.cms.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.nxgenminds.eduminds.ju.cms.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.nxgenminds.eduminds.ju.cms.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.nxgenminds.eduminds.ju.cms.utils.UILApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/jgiappicon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.userLogin.MainSplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.HomePage"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.messages.ChatDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.noticeboard.NoticeBoardDeatailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.noticeboard.NoticeBoardImageDisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.placementsboard.PlacementsBoardDeatailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.placementsboard.PlacementsBoardImageDisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.NavMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.messages.SearchUserMessages"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.guestLogin.GuestLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.userLogin.MemberLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.classSchedule.ClassScheduleDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.classSchedule.AdminFilterView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.jgigroup.GroupTabMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.userprofile.UserTabMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.userprofile.UserProfileAlumni"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.thirdpartyprofile.ThirdPartyTabMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.guestLogin.GuestLoginTabMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.timefeed.LikeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.statusUpdate.UserPostCreateAcitivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.contactFetcher.Contact_Fetcher_MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="eu.janmuller.android.simplecropimage.CropImage"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="com.nxgenminds.eduminds.ju.cms.utils.InternalStorageContentProvider"
+            android:authorities="com.youflik.youconnect.ju.cms.utils"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.ViewProfilePhoto"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.userprofileupdate.UserProfileUpdate"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.Select_Connections"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.Select_Connections_Messages"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.Internship.AdminDetailView"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.Internship.CompanyAdminDetailView"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.SelectConnectionTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.events.EventDetailActivtiy"
+            android:label="Event Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.youflik.youconnect.ju.cms.broadcast.BroadcastCompose"
+            android:label="Create Broadcast"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.events.UserCreateEvent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.events.EventUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.events.EventThemestThemes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.search.SearchMembers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.DiscussionForum.DiscussionsForumQuestionsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.LearningOutcomeStudentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.attendence.TakeAttendenceActivtiy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.DiscussionForum.DiscussionsFrmReplysActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.events.EventThemes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.events.EventUserSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.broadcast_new.BroadcastCreateActivity_new"
+            android:label="Create Broadcast"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.broadcast_new.BroadcastCustomFiltersListActivity_new"
+            android:label="Select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.FeedbackAdmin.FeedBackAdminFilterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.FeedbackAdmin.FeedBackAdminTeacherListingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.FeedbackAdmin.FeedbackTeacherDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.ResetPassword"
+            android:label="Reset Password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.guestLogin.GuestRegistration"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.guestAdmissions.AdmissionDeatailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.guestAcademics.AcademicsDeatailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.nxgenminds.eduminds.ju.cms.guestEntrnaceTest.EntranceTestResultDeatailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="com.nxgenminds.eduminds.ju.cms.broadcastreceivers.JucmsGCMBroadCastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.youflik.youconnect.ju.cms.broadcastreceivers" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.nxgenminds.eduminds.ju.cms.services.JucmsGCMIntentService" />
+
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:exported="true"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.nxgenminds.eduminds.ju.cms" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.nxgenminds.eduminds.ju.cms" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.nxgenminds.eduminds.ju.cms.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

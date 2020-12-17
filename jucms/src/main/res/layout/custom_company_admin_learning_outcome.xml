@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/company_custom__outcome_fromDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="@string/string_internship_learning_outcome_from"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/company_custom__outcome_toDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:text="@string/string_internship_learning_outcome_to"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/company_custom_outcome_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:gravity="left"
+            android:hint="@string/string_internship_type"
+            android:minHeight="75dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp" >
+
+            <EditText
+                android:id="@+id/company_custom_outcome_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/company_outcome_approve"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Add Remarks"
+                android:imeOptions="actionDone"
+                android:minHeight="35dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:visibility="invisible" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/company_outcome_approve"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:background="@null"
+                android:src="@drawable/ic_approve"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

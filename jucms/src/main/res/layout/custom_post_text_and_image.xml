@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp" >
+
+            <com.nxgenminds.eduminds.ju.cms.utils.ImageViewRounded
+                android:id="@+id/postOwnerImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder" >
+            </com.nxgenminds.eduminds.ju.cms.utils.ImageViewRounded>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_profile_info_padd" >
+
+                <TextView
+                    android:id="@+id/postUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Govardan"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/postdateundername"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5 mins ago"
+                    android:textColor="@color/timestamp"
+                    android:textSize="@dimen/feed_item_timestamp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/postText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:paddingTop="@dimen/feed_item_status_pad_top"
+            android:text="Hello Everyone !" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/postImageOnTop"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_av_play_over_video"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/like_cmnt_share_trans_container_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#f2f2f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="3dp" >
+
+            <ImageButton
+                android:id="@+id/postlikeButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <!--
+                 <View
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/vertical_line" /
+            -->
+            <!--
+            <View
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/vertical_line" />
+
+            <ImageView
+                android:id="@+id/hide_post_main"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/feed_option" />
+            -->
+
+            <TextView
+                android:id="@+id/postTotalLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/postlikeButton"
+                android:gravity="center_vertical"
+                android:src="@drawable/placeholder"
+                android:text="100 Likes"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/postOptionsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/feed_option" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

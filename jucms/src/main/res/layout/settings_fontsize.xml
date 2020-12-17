@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1"
+    android:gravity="top|center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/settings_font_rgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/settings_font_rbutton_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_small"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/settings_font_rbutton_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_normal"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/settings_font_rbutton_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_large"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/settings_font_button_cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/settings_cancel" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

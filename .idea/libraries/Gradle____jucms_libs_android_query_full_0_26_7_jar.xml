@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./jucms/libs/android-query-full.0.26.7.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jucms/libs/android-query-full.0.26.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

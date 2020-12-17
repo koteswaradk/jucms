@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <EditText
+            android:id="@+id/topicName"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_broder_gray"
+            android:drawableRight="@drawable/ic_enter"
+            android:gravity="center_vertical"
+            android:hint="Add a Topic"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/topicsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        android:dividerHeight="1dp" >
+    </ListView>
+ 
+</LinearLayout>
